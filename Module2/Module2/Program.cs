@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Module2_1
 {
@@ -18,13 +14,15 @@ namespace Module2_1
 
             while (!condition)
             {
-                Console.WriteLine("Введите число компаний:"); condition = int.TryParse(Console.ReadLine(), out numberCompanies);
+                Console.WriteLine("Введите число компаний:");
+                condition = int.TryParse(Console.ReadLine(), out numberCompanies);
             }
 
             condition = false;
             while (!condition)
             {
-                Console.WriteLine("Введите налог в %:"); condition = double.TryParse(Console.ReadLine(), out tax);
+                Console.WriteLine("Введите налог в %:");
+                condition = double.TryParse(Console.ReadLine(), out tax);
             }
 
             sumTaxes = numberCompanies * profit * tax / 100;
