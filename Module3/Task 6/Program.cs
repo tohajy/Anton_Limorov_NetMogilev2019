@@ -32,6 +32,7 @@ namespace Task_6
                     continue;
                 }
             }
+
             Random rnd = new Random();
 
             int[] array = new int[arraySize];
@@ -55,6 +56,7 @@ namespace Task_6
                 count++;
                 Console.Write(array[i] + " ");
             }
+
             Console.ReadLine();
         }
     }

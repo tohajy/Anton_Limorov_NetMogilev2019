@@ -15,6 +15,7 @@ namespace Task_5
             {
                 Console.Write("Введённое вами значение некорректное. Попробуйте ещё раз: ");
             }
+
             Console.WriteLine("введите цифру, которую надо удалить");
 
             int deleteDigit;
@@ -38,6 +39,7 @@ namespace Task_5
                 number = number * 10 + temp % 10;
                 temp /= 10;
             }
+
             Console.WriteLine("Новое число:" + number);
             Console.ReadKey();
         }

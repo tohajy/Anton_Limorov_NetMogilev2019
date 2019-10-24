@@ -14,14 +14,17 @@ namespace Task_1
             {
                 Console.Write("Введённое вами значение некорректное. Попробуйте ещё раз: ");
             }
+
             Console.Write("Введите второе число: ");
 
             while (!int.TryParse(Console.ReadLine(), out secondNumber))
             {
                 Console.Write("Введённое вами значение некорректное. Попробуйте ещё раз: ");
             }
-            Console.WriteLine("Результат: ");
-            Console.WriteLine(Multiply(firstNumber, secondNumber));
+
+            int result = Multiply(firstNumber, secondNumber);
+            Console.WriteLine($"Результат: {result}");
+
             Console.ReadKey();
         }
         public static int Multiply(int firstnumb, int secondnumb)

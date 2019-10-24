@@ -32,8 +32,10 @@ namespace Task_7
                     continue;
                 }
             }
+
             Random rnd = new Random();
             int[] array = new int[arraySize];
+
             Console.WriteLine("Исходный массив");
 
             for (int i = 0; i < array.Length; i++)
@@ -41,6 +43,7 @@ namespace Task_7
                 array[i] = rnd.Next(-10, 10);
                 Console.Write(array[i] + " ");
             }
+
             Console.WriteLine();
             Console.WriteLine("Числа, больше предыдущих в ряду:");
 
@@ -51,6 +54,7 @@ namespace Task_7
                     Console.Write(array[i] + " ");
                 }
             }
+
             Console.ReadLine();
         }
     }

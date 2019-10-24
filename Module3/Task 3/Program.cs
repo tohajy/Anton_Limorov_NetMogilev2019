@@ -24,7 +24,8 @@ namespace Task_3
             }
             Console.Write("Ряд Фибоначчи, состоящий из {0} элементов: ", nElements);
 
-            var fibonacci = new ulong[nElements];
+            ulong[] fibonacci = new ulong[nElements];
+
             fibonacci[0] = 1;
             fibonacci[1] = 1;
 
@@ -37,6 +38,7 @@ namespace Task_3
             {
                 Console.Write(i + " ");
             }
+
             Console.ReadLine();
         }
     }
