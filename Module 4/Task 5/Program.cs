@@ -13,8 +13,8 @@ namespace Task_5
         }
         static void Main(string[] args)
         {
-            var x = 0;
-            var y = 0;
+            int x;
+            int y;
 
             Console.WriteLine("Enter the first number:");
 
@@ -32,21 +32,21 @@ namespace Task_5
 
 
             Console.Write("Addition: ");
-            MathOp(x, y, Operation.Add);
+            MathOperation(x, y, Operation.Add);
             Console.Write("Divide: ");
-            MathOp(x, y, Operation.Divide);
+            MathOperation(x, y, Operation.Divide);
             Console.Write("Multiply: ");
-            MathOp(x, y, Operation.Multiply);
+            MathOperation(x, y, Operation.Multiply);
             Console.Write("Subtract: ");
-            MathOp(x, y, Operation.Subtract);
+            MathOperation(x, y, Operation.Subtract);
             Console.ReadLine();
         }
 
-        private static void MathOp(double x, double y, Operation op)
+        private static void MathOperation(double x, double y, Operation type)
         {
             var result = 0.0;
 
-            switch (op)
+            switch (type)
             {
                 case Operation.Add:
                     result = x + y;
@@ -61,7 +61,7 @@ namespace Task_5
                     result = x / y;
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(op), op, null);
+                    throw new ArgumentOutOfRangeException(nameof(type), type, null);
             }
 
             Console.WriteLine(result);

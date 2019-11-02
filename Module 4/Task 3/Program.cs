@@ -7,9 +7,9 @@ namespace Task_3
     {
         private static void Main(string[] args)
         {
-            var x = 0;
-            var y = 0;
-            var z = 0;
+            int x;
+            int y;
+            int z;
 
             Console.WriteLine("Task 3.A.");
             Console.WriteLine("Enter the first number:");
@@ -46,7 +46,7 @@ namespace Task_3
                 Console.Write("Incorrect value. Try again: ");
             }
 
-            GetAreaPerimeter(ref radius, out var area, out var perimeter);
+            GetAreaPerimeter(radius, out var area, out var perimeter);
 
             Console.WriteLine($"Circle area - {area}, perimeter - {perimeter}");
             Console.WriteLine("Task 3.C.");
@@ -86,7 +86,7 @@ namespace Task_3
             z += 10;
         }
 
-        private static void GetAreaPerimeter(ref int rad, out double area, out double perimeter)
+        private static void GetAreaPerimeter(int rad, out double area, out double perimeter)
         {
             area = Math.PI * rad * rad;
             perimeter = 2 * Math.PI * rad;

@@ -7,7 +7,7 @@ namespace Task_1
     {
         private static void Main(string[] args)
         {
-            var arraySize = 0;
+            int arraySize = 0;
 
             Console.WriteLine("Array size:");
 
