@@ -39,7 +39,7 @@ namespace Task_3
             Console.WriteLine("Task 3.B.");
             Console.WriteLine("Enter the radius:");
 
-            var radius = 0;
+            int radius;
 
             while (!int.TryParse(Console.ReadLine(), out radius))
             {
@@ -52,7 +52,7 @@ namespace Task_3
             Console.WriteLine("Task 3.C.");
             Console.WriteLine("Enter the array size:");
 
-            var arraySize = 0;
+            int arraySize;
 
             while (!int.TryParse(Console.ReadLine(), out arraySize))
             {

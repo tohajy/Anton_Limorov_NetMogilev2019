@@ -29,7 +29,7 @@ namespace Task_2
             Console.WriteLine("Task 2.E.");
             Console.WriteLine("Enter the array size:");
 
-            int arraySize = 0;
+            int arraySize;
 
             while (!int.TryParse(Console.ReadLine(), out arraySize))
             {
@@ -38,7 +38,7 @@ namespace Task_2
 
             Console.WriteLine("Enter the array size:");
 
-            int arraySizeTwo = 0;
+            int arraySizeTwo;
 
             while (!int.TryParse(Console.ReadLine(), out arraySizeTwo))
             {
@@ -75,9 +75,9 @@ namespace Task_2
 
         private static int GetSumThreeNumbers()
         {
-            var x = 0;
-            var y = 0;
-            var z = 0;
+            int x;
+            int y;
+            int z;
 
             Console.WriteLine("Enter the first number:");
 
@@ -106,8 +106,8 @@ namespace Task_2
 
         private static int GetSumTwoNumbers()
         {
-            int x = 0;
-            int y = 0;
+            int x;
+            int y;
 
             Console.WriteLine("Enter the first number:");
 

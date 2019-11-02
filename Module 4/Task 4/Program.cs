@@ -33,6 +33,7 @@ namespace Task_4
             {
                 Console.Write("Incorrect value. Try again: ");
             }
+
             var (numberX, numberY, numberZ) = ModifyNumbers(x, y, z);
 
             Console.WriteLine($"Modified numbers: {numberX}, {numberY}, {numberZ}");
@@ -46,6 +47,7 @@ namespace Task_4
             {
                 Console.Write("Incorrect value. Try again: ");
             }
+
             var (area, perimeter) = GetAreaPerimeter(radius);
 
             Console.WriteLine($"Circle area - {area}, perimeter - {perimeter}");
@@ -69,6 +71,7 @@ namespace Task_4
                 array[i] = rnd.Next(-100, 100);
                 Console.Write(array[i] + " ");
             }
+
             var (maxValue, minValue, sum) = GetMaxMinValue(array);
 
             Console.WriteLine();
