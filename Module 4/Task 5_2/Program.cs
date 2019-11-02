@@ -24,14 +24,34 @@ namespace Task_5_2
             }
 
             int days = GetDaysMonth(year, month);
-
+            
             Console.Write($"There are {days} in this month.");
+
+            days = GetDays(month, year);
+
+            Console.Write($"\n(The second solution):\nThere are {days} in this month.");
             Console.ReadLine();
         }
 
         private static int GetDaysMonth(int year, int month)
         {
             return DateTime.DaysInMonth(year, month);
+        }
+
+        //one more method
+        private static int GetDays(int month, int year = 2016)
+        {
+            if (month == 2)
+            {
+                return Math.Abs(year - 2012) % 4 == 0 ? 29 : 28;
+            }
+
+            if (month <= 7)
+            {
+                return month % 2 == 0 ? 30 : 31;
+            }
+
+            return month % 2 == 0 ? 31 : 30;
         }
     }
 }
